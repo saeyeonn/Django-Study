@@ -23,7 +23,9 @@ class Flight:
     def open_seats(self):
         return self.capacity - len(self.passengers)
 
-itm_flight = Flight(500)
+
+capacity = 500
+itm_flight = Flight(capacity)
 print(itm_flight.capacity)
 
 people = ['Saeyeon', 'Cherry', 'Pochacco']
