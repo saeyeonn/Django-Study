@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta property="og:title" content="ITM">
+        <meta property="og:description" content="Introduction to HTML">
+        <meta property="og:image" content="pochacco.png">
+        <title>Title - Hello</title>
+    </head>
+    <body>
+        Body - hello 
+        <br><br>
+        <a href="https://www.harvard.edu">Visit Harvard</a>
+        <br><br>
+        <h2>h1 ~ h6 denote different levels of headings</h2>
+        <br>
+        <p>Whitespace & indentation is effectively ignored in HTML</p>
+        <br>
+        <ul>
+            ul creates unordered list
+            <li>ul-cherry</li>
+            <li>ul-peach</li>
+            <li>ul-melon</li>
+        </ul>
+        <br>
+        <ol>
+            ol creates ordered list
+            <li>ol-cherry</li>
+            <li>ol-peach</li>
+            <li>ol-melon</li>
+        </ol>
+        <br><br>
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+        <br><br>
+        <img alt="photo of pochacco" src="pochacco.png" width="30%">
+        <video controls muted>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        <br><br>
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="search">
+            <input type="submit" value="Google Search">
+        </form>
+        <br><br>
+        <form action="https://www.google.com/search" method="get">
+            <input autocomplete="off" autofocus name="q" placeholder="Query" type="search">
+            <button>Search</button>
+        <br><br>
+        </form>
+        <br><br>
+        <form>
+            <input autocomplete="off" autofocus name="email" placeholder="email" type="email">
+            <button>Register</button> 
+        </form>
+        <br>
+        <form>
+            <input autocomplete="off" autofocus name="email" placeholder="email" pattern=".+@.+\.edu" type="email">
+            <button>Register</button>
+        </form>
+        <br><br>
+        <form action="#" accept-charset="utf-8" name="personal info" method="get">
+            <fieldset style="width:40%">
+                <legend>personal info</legend>
+                    name : <input type="text" name="name" required/><br><br>
+                    personal id : <input type="text" name="personal id" pattern="\d{6}\-\d{7}"
+                    title="form : 000000-0000000"/><br><br>
+
+                    id : <input type="text" name="id"/><br><br>
+                    password : <input type="text" name="password"/><br><br>
+
+                    gender : male<input type="radio" name="gender" />
+                             female<input type="radio" name="gender" /><br><br>
+
+                    interest : IT<input type="checkbox" name="checkbox1" />
+                                Management<input type="checkbox" name="checkbox2" />
+                                Data<input type="checkbox" name="checkbox3" /><br><br>
+                    introduction <br>
+                    <textarea name="introduction" cols="30%" rows="5%" placeholder="introduce yourself"></textarea>
+                    <br><br>
+                    <input type="submit" value="submit" />
+                    <input type="reset" value="reset" /><br><br>
+            </fieldset>
+        </form>
+    </body>
+</html>

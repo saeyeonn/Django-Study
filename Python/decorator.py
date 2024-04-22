@@ -3,12 +3,10 @@ def announce(f):
         print("About to run function...")
         f()
         print("Done with function")
-    return wrapper
-
+    return wrapper()
 
 @announce
 def hello():
     print("Hello")
-
 
 hello()
